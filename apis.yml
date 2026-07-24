@@ -1,8 +1,26 @@
 aid: boltearth
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/boltearth.png
 name: Bolt.Earth
-description: 'Bolt.Earth is a company surfaced as a portfolio company of version-one-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: energy. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Bolt.Earth operates what it describes as India''s largest EV charging network, with more
+  than 100,000 charging points deployed across 2,100+ cities. The company sells EV charging hardware
+  (3.3kW smart sockets for 2/3/4-wheelers, AC chargers from 7.4kW to 22kW, and DC fast chargers from
+  30kW to 240kW) alongside a Charging Management System (CMS) for operators and a consumer mobile app
+  for locating, booking, and paying for charging sessions. Services span site assessment, installation,
+  KYC onboarding, charger activation, remote firmware updates, and 24/7 support for individuals, RWAs,
+  enterprises, fleet operators, hospitality venues, highways, and government agencies. Bolt.Earth is
+  backed by Version One Ventures and is tracked in the API Evangelist network as an energy-sector
+  company profile. No public developer API portal or OpenAPI definition was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/boltearth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Energy
+- Electric Vehicles
+- EV Charging
+- Charging Infrastructure
+- Clean Energy
+- Mobility
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/boltearth-domain-security.yml
 - type: Website
   url: https://bolt.earth
+- type: Blog
+  url: https://bolt.earth/blog
+- type: Support
+  url: https://bolt.earth/contact-us
+- type: TermsOfService
+  url: https://bolt.earth/general-terms
+- type: PrivacyPolicy
+  url: https://bolt.earth/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
